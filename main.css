@@ -1,0 +1,149 @@
+/* Reset de estilos para todos os elementos, eliminando margens, preenchimentos e considerando a borda no modelo de caixa. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', sans-serif;
+}
+
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para o cabeçalho (header) do site. */
+header {
+    padding: 16px 0; /* Adiciona espaçamento interno ao cabeçalho */
+    background-color: #182c61; /* Define a cor de fundo do cabeçalho */
+    color: #ecf0f1; /* Define a cor do texto no cabeçalho */
+}
+
+header h1,
+section h2,
+section h3 {
+    font-weight: normal;
+}
+
+/* Estilos para os itens da navegação dentro do cabeçalho */
+header nav li {
+    display: inline; /* Faz os itens da navegação aparecerem na mesma linha */
+    margin-left: 16px; /* Adiciona espaçamento à esquerda entre os itens da navegação */
+    font-size: 14px;
+}
+
+/* Estilos para os links dentro dos itens da navegação no cabeçalho */
+header nav li a {
+    color: #ecf0f1; /* Define a cor do texto dos links na navegação */
+    text-decoration: none; /* Excluindo o underline dos link */
+}
+
+/* Estilos para o container geral, limitando sua largura máxima, centrando-o e tornando-o flexível. */
+.container {
+    max-width: 1280px; /* Define a largura máxima do container */
+    width: 100%; /* Faz o contêiner ocupar 100% da largura disponível */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+}
+
+/* Estilos específicos para o container dentro do cabeçalho, usando flexbox para alinhar e justificar conteúdo. */
+header .container,
+section .container {
+    display: flex; /* Faz o container do cabeçalho usar o modelo de layout flexível */
+    align-items: center; /* Centraliza verticalmente o conteúdo dentro do container do cabeçalho */
+    justify-content: space-between; /* Distribui uniformemente o espaço entre os itens do container do cabeçalho */
+}
+
+.brands-list img {
+    height: 24px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 10px;
+}
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    color: #182c61;
+}
+
+section p {
+    margin-bottom: 16px;
+}
+
+.imgprincipal {
+    margin-right: 32px;
+}
+
+.social img {
+    height: 24px;
+}
+
+.social li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 10px; 
+    padding: 10px;
+}
+
+form textarea {
+    resize: none;
+    height: 130px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #182c61;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #314e9e;
+}
+
+input:focus, textarea:focus {
+    outline-color: #182c61;
+}
+
+footer {
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+    
+}
